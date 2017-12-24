@@ -14,13 +14,17 @@ body {
   background: #4B5B51;
   overflow-x: hidden; }
 
-p {
-  font-family: 'Titillium Web', sans-serif; }
-
-#work h1,
-#contact h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Arvo', serif;
   cursor: default; }
+
+p {
+  font-family: 'Titillium Web', sans-serif; }
 
 /* Parallax */
 .keyart, .keyart_layer {
@@ -44,6 +48,9 @@ p {
   background-position: center;
   background-size: cover;
   height: 30vh; }
+  #hero-mobile h1 {
+    color: #4B5B51;
+    background-color: rgba(255, 255, 255, 0.5); }
 
 .content {
   height: 100vh; }
@@ -58,7 +65,7 @@ p {
   background-image: url(../assets/images/hills.png); }
 
 .footer_keyart {
-  background-image: url(../assets/images/footer.png); }
+  background-image: url(../assets/images/footermod.png); }
 
 .leaf {
   background-image: url(../assets/images/maple.png);
@@ -171,11 +178,9 @@ p {
 /* Sections */
 .about {
   position: relative;
-  top: 450px;
+  top: 30%;
   background: rgba(0, 0, 0, 0.5);
   color: #E9DFC3; }
-  .about .display-2 {
-    font-family: 'Arvo', serif; }
 
 .main {
   background: #4B5B51; }
@@ -204,9 +209,11 @@ p {
   height: 300px;
   margin: 10px;
   transition: 0.3s;
-  background-color: transparent; }
+  background-color: transparent;
+  opacity: 0.8; }
   .img-thumbnail:hover {
-    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    opacity: 1; }
 
 /* Buttons */
 .btn-success {
@@ -240,9 +247,16 @@ p {
   #leaves {
     display: none; }
   #contact .contact-content {
-    bottom: 30px; } }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -60px; } }
 
 @media only screen and (max-width: 768px) {
   .img-thumbnail {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  .display-1 {
+    font-size: 3rem; }
+  .display-2 {
+    font-size: 2.5rem; } }

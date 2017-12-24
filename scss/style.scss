@@ -17,14 +17,18 @@ body {
     overflow-x: hidden;
 }
 
-p {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#work h1,
-#contact h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Arvo', serif;
     cursor: default;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
 }
 
 /* Parallax */
@@ -63,6 +67,10 @@ p {
     background-position: center;
     background-size: cover;
     height: 30vh;
+    h1 {
+        color: #4B5B51;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
 }
 
 .content {
@@ -82,7 +90,7 @@ p {
 }
 
 .footer_keyart {
-    background-image: url(../assets/images/footer.png);
+    background-image: url(../assets/images/footermod.png);
 }
 
 .leaf {
@@ -218,12 +226,9 @@ p {
 
 .about {
     position: relative;
-    top: 450px;
+    top: 30%;
     background: rgba(0, 0, 0, 0.5);
     color: #E9DFC3;
-    .display-2 {
-        font-family: 'Arvo', serif;
-    }
 }
 
 .main {
@@ -263,8 +268,10 @@ p {
     margin: 10px;
     transition: 0.3s;
     background-color: transparent;
+    opacity: 0.8;
     &:hover {
         box-shadow: 0 0 11px rgba(33,33,33,.2);
+        opacity: 1;
     }
 }
 
@@ -313,7 +320,10 @@ p {
     }
 
     #contact .contact-content {
-        bottom: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: -60px;
     }
 }
 
@@ -321,5 +331,13 @@ p {
     .img-thumbnail {
         width: 100%;
         height: auto;
+    }
+
+    .display-1 {
+        font-size: 3rem;
+    }
+
+    .display-2 {
+        font-size: 2.5rem;
     }
 }
