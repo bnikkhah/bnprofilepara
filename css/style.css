@@ -138,8 +138,18 @@ a {
 #work {
   padding: 20px;
   position: relative; }
-  #work h1 {
+  #work h1,
+  #work h2 {
     color: #C1B290; }
+  #work p {
+    color: #E9DFC3; }
+  #work #codepen {
+    width: 350px;
+    box-shadow: 0px 17px 20px -10px rgba(0, 0, 0, 0.4);
+    transition: .6s; }
+    #work #codepen:hover {
+      box-shadow: 0px 57px 20px -20px rgba(0, 0, 0, 0.2);
+      transform: translate(0px, -10px); }
 
 #about {
   line-height: 1.6; }
